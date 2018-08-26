@@ -1,0 +1,15 @@
+body{
+  font-family: Arial;
+  font-size: 16px;
+}
+
+header, footer{
+  background-color: green;
+  padding: 10px;
+  color: white;
+}
+
+header a{
+  color: white;
+}
+
