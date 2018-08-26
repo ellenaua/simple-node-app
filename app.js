@@ -10,7 +10,12 @@ app.engine('hbs', exphbs({defaultLayout: 'main', extname: ".hbs" }));
 app.set('view engine', 'hbs');
 
 app.get('/', (req, res) => {
-  res.render('index')
+  const items = [
+    {title: "Milk", price: 12},
+    {title: "Chocolate", price: 22},
+    {title: "Burger", price: 44}
+  ]
+  res.render('index', { items: items })
 })
 
 app.get('/faq', (req, res) => {
